@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Evidence for every published number
+    url: https://github.com/mpuodziukas-labs/finetune-vs-rag-lab/blob/main/EVIDENCE.md
+    about: Each claim, the command that proves it, and the expected output. Check it before reporting a number as wrong.

@@ -1,0 +1,54 @@
+criterion_id	met	evidence	gap
+R1-01	yes	finetune-vs-rag-lab/scripts/verify.sh:3-4,55-69	Needs ~1 h of receipts first (ci.yml comment)
+R1-02	yes	finetune-vs-rag-lab/uv.lock; .github/workflows/ci.yml:11-12	
+R1-03	yes	finetune-vs-rag-lab/scripts/verify.sh:62-63; README.md:7; PUBLISH.tsv	
+R1-04	partial	finetune-vs-rag-lab/README.md:128-136; .gitignore (artifacts/ ignored)	Adapters not published; no weights or release link
+R1-05	partial	finetune-vs-rag-lab/.github/workflows/ci.yml:1-17	CI skips verify (receipts too heavy); no badge; no commits
+R1-06	yes	finetune-vs-rag-lab/configs/default.yaml:7-12,30,50; src/ftlab/data.py:25-31	
+R1-07	no	git status of lab: no commits on main	Needs first commit and a tag (OWNER)
+R1-08	yes	finetune-vs-rag-lab/README.md:14,130-131 (Apple CPU, ~11 min)	
+R1-09	yes	finetune-vs-rag-lab/src/ftlab/audit.py:18-30; README.md:18	
+R1-10	partial	finetune-vs-rag-lab/src/ftlab/data.py:46-47; README.md:20	Exact-dup only; paraphrase leakage unmeasured
+R1-11	yes	finetune-vs-rag-lab/configs/default.yaml:2; src/ftlab/modeling.py:30; src/ftlab/cli.py:95	
+R1-12	no	finetune-vs-rag-lab/README.md:14 'one seed, one run'	Train LoRA with >=3 seeds; report mean and sd
+R1-13	yes	finetune-vs-rag-lab/src/ftlab/stats.py:9-35; README.md:61	CI is over test sampling only, not training seed (see R1-12)
+R1-14	partial	finetune-vs-rag-lab/README.md:44-46 (first-token scoring)	Accuracy not defined; no macro-F1
+R1-15	no	none found	No scipy/sklearn cross-check of accuracy, McNemar or bootstrap
+R1-16	partial	finetune-vs-rag-lab/README.md:52-58 (zero-shot, BM25 few-shot)	No classical baseline (TF-IDF+logreg, kNN); no published number
+R1-17	no	finetune-vs-rag-lab/configs/default.yaml:8-24 (10 of 77 classes, re-split)	Not comparable to S27 (93.66 BERT-tuned, 93.36 USE+ConveRT full 77-class)
+R1-18	partial	finetune-vs-rag-lab/README.md:70-80 (25/50/100 percent)	One model size, one task, one k grid
+R1-19	na	no generation metric; classification	
+R1-20	na	no long-context stage	
+R1-21	yes	finetune-vs-rag-lab/configs/default.yaml:34-40; src/ftlab/modeling.py:26-34; README.md:18	
+R1-22	partial	finetune-vs-rag-lab/README.md:17,18 (k tuned on dev)	k tuned for RAG, LoRA lr/epochs/rank not searched: asymmetric effort
+R1-23	yes	finetune-vs-rag-lab/README.md:15,84-92 (estimate label, p50/p95)	
+R1-24	yes	finetune-vs-rag-lab/README.md:151; configs/default.yaml:8,29	
+R1-25	partial	finetune-vs-rag-lab/configs/default.yaml:21-25; data/ ignored	No data statement for the 10-class subset
+R1-26	no	finetune-vs-rag-lab/artifacts/lora_f100/README.md (unfilled PEFT template, 'More Information Needed')	Write real card; artifacts dir is gitignored
+R1-27	yes	finetune-vs-rag-lab/LICENSE; README.md:151	
+R1-28	na	human-labelled upstream dataset	
+R1-29	yes	finetune-vs-rag-lab/.github/workflows/ci.yml:12-17	
+R1-30	yes	finetune-vs-rag-lab/scripts/selftest.sh; src/ftlab/selftest.py; tests/test_audit.py	
+R1-31	no	no coverage flags in scripts/verify.sh or ci.yml	Add pytest-cov floor
+R1-32	yes	.github/workflows/ci.yml (permissions, 40-hex pins); .github/dependabot.yml; tests/test_p2_platform.py::test_actions_pinned	
+R1-33	yes	SECURITY.md CONTRIBUTING.md CITATION.cff THREAT-MODEL.md	
+R1-34	partial	finetune-vs-rag-lab/README.md:1-151 (no badges, no TOC)	Add badges and TOC
+R1-35	partial	finetune-vs-rag-lab/README.md:1-10 (no number in intro); table at 52-61	Move headline with CI to line 3
+R1-36	partial	finetune-vs-rag-lab/README.md:52-61	No published external column
+R1-37	yes	CITATION.cff; REFERENCES.md; tests/test_p2_platform.py::test_citation_and_references	
+R1-38	yes	finetune-vs-rag-lab/README.md:12-22; DESIGN.md Steelman	
+R1-39	yes	finetune-vs-rag-lab/README.md:19; efficiency table 25% tie	
+R1-40	partial	finetune-vs-rag-lab/.gitignore (no .env*); no secret scan	Add secret scan to verify.sh
+R1-41	na	local only; no retrieval over untrusted text beyond labelled train rows	
+R1-42	partial	finetune-vs-rag-lab/scripts/verify.sh:6 HF_HUB_OFFLINE default 0	Offline replay of verify not gated
+R1-43	yes	tests/conftest.py socket guard; tests/test_review.py::test_network_guard_blocks_external_connect	
+R1-44	partial	finetune-vs-rag-lab/src/ftlab/data.py:31; src/ftlab/forget.py:17 (hf_hub_download, library default timeout)	Set HF_HUB_DOWNLOAD_TIMEOUT explicitly
+R1-45	no	finetune-vs-rag-lab/src/ftlab/data.py:25-31	No bounded retry; sha256 fail-closed is good
+R1-46	yes	0 TLS overrides; 24 text opens name utf-8 (lane I grep)	
+R1-47	partial	finetune-vs-rag-lab/src/ftlab/data.py:26 sha mismatch raises	No typed network errors
+R1-48	yes	finetune-vs-rag-lab/.github/workflows/ci.yml:13-14; pyproject.toml:35-46	
+R1-49	yes	ls: no .bak/.orig; grep commented code: 0	
+R1-50	partial	finetune-vs-rag-lab/scripts/verify.sh:69 ($HOME/.local/bin/dewatermark)	Local-only binary, not in CI; strangers cannot run it
+R1-51	yes	README under 1800 words, 0 repeated lines over 60 chars; tests/test_p2_platform.py::test_readme_budget	
+R1-52	partial	grep skip|xfail: 0 hits	No 3x repeat gate
+R1-53	yes	grep TODO|FIXME: 0 hits	

@@ -1,0 +1,1205 @@
+{
+ "adapter": {
+  "logit_delta": 4.362756043672562,
+  "lora_params": 2442240,
+  "rank": 8
+ },
+ "code_sha": "47d98ae62aefa11c3eb55ae18da8324073dafda7a7e2b6c2cc440b8892273fac",
+ "curve": [
+  {
+   "epoch": 1,
+   "loss": 11.795180320739746,
+   "step": 1
+  },
+  {
+   "epoch": 1,
+   "loss": 12.56213665008545,
+   "step": 2
+  },
+  {
+   "epoch": 1,
+   "loss": 10.565194129943848,
+   "step": 3
+  },
+  {
+   "epoch": 1,
+   "loss": 11.061165809631348,
+   "step": 4
+  },
+  {
+   "epoch": 1,
+   "loss": 11.318591117858887,
+   "step": 5
+  },
+  {
+   "epoch": 1,
+   "loss": 8.235076904296875,
+   "step": 6
+  },
+  {
+   "epoch": 1,
+   "loss": 9.894231796264648,
+   "step": 7
+  },
+  {
+   "epoch": 1,
+   "loss": 7.822874546051025,
+   "step": 8
+  },
+  {
+   "epoch": 1,
+   "loss": 7.033616542816162,
+   "step": 9
+  },
+  {
+   "epoch": 1,
+   "loss": 7.190306663513184,
+   "step": 10
+  },
+  {
+   "epoch": 1,
+   "loss": 8.162050247192383,
+   "step": 11
+  },
+  {
+   "epoch": 1,
+   "loss": 6.534285545349121,
+   "step": 12
+  },
+  {
+   "epoch": 1,
+   "loss": 6.026372909545898,
+   "step": 13
+  },
+  {
+   "epoch": 1,
+   "loss": 5.764557838439941,
+   "step": 14
+  },
+  {
+   "epoch": 1,
+   "loss": 3.887495994567871,
+   "step": 15
+  },
+  {
+   "epoch": 1,
+   "loss": 5.2649455070495605,
+   "step": 16
+  },
+  {
+   "epoch": 1,
+   "loss": 4.917301177978516,
+   "step": 17
+  },
+  {
+   "epoch": 1,
+   "loss": 4.405050277709961,
+   "step": 18
+  },
+  {
+   "epoch": 1,
+   "loss": 5.192523956298828,
+   "step": 19
+  },
+  {
+   "epoch": 1,
+   "loss": 3.5441431999206543,
+   "step": 20
+  },
+  {
+   "epoch": 1,
+   "loss": 4.05803918838501,
+   "step": 21
+  },
+  {
+   "epoch": 1,
+   "loss": 4.271812438964844,
+   "step": 22
+  },
+  {
+   "epoch": 1,
+   "loss": 3.1072847843170166,
+   "step": 23
+  },
+  {
+   "epoch": 1,
+   "loss": 2.093031883239746,
+   "step": 24
+  },
+  {
+   "epoch": 1,
+   "loss": 3.8019559383392334,
+   "step": 25
+  },
+  {
+   "epoch": 1,
+   "loss": 2.4070498943328857,
+   "step": 26
+  },
+  {
+   "epoch": 1,
+   "loss": 2.930361032485962,
+   "step": 27
+  },
+  {
+   "epoch": 1,
+   "loss": 2.2830893993377686,
+   "step": 28
+  },
+  {
+   "epoch": 1,
+   "loss": 1.5061842203140259,
+   "step": 29
+  },
+  {
+   "epoch": 1,
+   "loss": 1.7926479578018188,
+   "step": 30
+  },
+  {
+   "epoch": 1,
+   "loss": 1.3766330480575562,
+   "step": 31
+  },
+  {
+   "epoch": 1,
+   "loss": 1.405766487121582,
+   "step": 32
+  },
+  {
+   "epoch": 1,
+   "loss": 1.5371743440628052,
+   "step": 33
+  },
+  {
+   "epoch": 1,
+   "loss": 1.0776422023773193,
+   "step": 34
+  },
+  {
+   "epoch": 1,
+   "loss": 1.4660675525665283,
+   "step": 35
+  },
+  {
+   "epoch": 1,
+   "loss": 1.5252407789230347,
+   "step": 36
+  },
+  {
+   "epoch": 1,
+   "loss": 1.3754934072494507,
+   "step": 37
+  },
+  {
+   "epoch": 1,
+   "loss": 0.9160984754562378,
+   "step": 38
+  },
+  {
+   "epoch": 2,
+   "loss": 0.8350349068641663,
+   "step": 39
+  },
+  {
+   "epoch": 2,
+   "loss": 1.1863442659378052,
+   "step": 40
+  },
+  {
+   "epoch": 2,
+   "loss": 0.8841310739517212,
+   "step": 41
+  },
+  {
+   "epoch": 2,
+   "loss": 0.73814457654953,
+   "step": 42
+  },
+  {
+   "epoch": 2,
+   "loss": 0.2279379516839981,
+   "step": 43
+  },
+  {
+   "epoch": 2,
+   "loss": 0.14420859515666962,
+   "step": 44
+  },
+  {
+   "epoch": 2,
+   "loss": 0.8007890582084656,
+   "step": 45
+  },
+  {
+   "epoch": 2,
+   "loss": 0.8564460873603821,
+   "step": 46
+  },
+  {
+   "epoch": 2,
+   "loss": 0.676312267780304,
+   "step": 47
+  },
+  {
+   "epoch": 2,
+   "loss": 0.529950737953186,
+   "step": 48
+  },
+  {
+   "epoch": 2,
+   "loss": 0.9695827960968018,
+   "step": 49
+  },
+  {
+   "epoch": 2,
+   "loss": 0.6616795063018799,
+   "step": 50
+  },
+  {
+   "epoch": 2,
+   "loss": 0.4898003041744232,
+   "step": 51
+  },
+  {
+   "epoch": 2,
+   "loss": 0.17162960767745972,
+   "step": 52
+  },
+  {
+   "epoch": 2,
+   "loss": 0.45695117115974426,
+   "step": 53
+  },
+  {
+   "epoch": 2,
+   "loss": 0.9572954773902893,
+   "step": 54
+  },
+  {
+   "epoch": 2,
+   "loss": 0.9655002951622009,
+   "step": 55
+  },
+  {
+   "epoch": 2,
+   "loss": 0.5192792415618896,
+   "step": 56
+  },
+  {
+   "epoch": 2,
+   "loss": 0.19293391704559326,
+   "step": 57
+  },
+  {
+   "epoch": 2,
+   "loss": 0.3226568102836609,
+   "step": 58
+  },
+  {
+   "epoch": 2,
+   "loss": 0.4090869724750519,
+   "step": 59
+  },
+  {
+   "epoch": 2,
+   "loss": 0.5743936896324158,
+   "step": 60
+  },
+  {
+   "epoch": 2,
+   "loss": 0.3379306495189667,
+   "step": 61
+  },
+  {
+   "epoch": 2,
+   "loss": 1.015230655670166,
+   "step": 62
+  },
+  {
+   "epoch": 2,
+   "loss": 0.7556341290473938,
+   "step": 63
+  },
+  {
+   "epoch": 2,
+   "loss": 0.1436949074268341,
+   "step": 64
+  },
+  {
+   "epoch": 2,
+   "loss": 0.27336353063583374,
+   "step": 65
+  },
+  {
+   "epoch": 2,
+   "loss": 0.1553502231836319,
+   "step": 66
+  },
+  {
+   "epoch": 2,
+   "loss": 0.16839592158794403,
+   "step": 67
+  },
+  {
+   "epoch": 2,
+   "loss": 0.5244253873825073,
+   "step": 68
+  },
+  {
+   "epoch": 2,
+   "loss": 0.3295721113681793,
+   "step": 69
+  },
+  {
+   "epoch": 2,
+   "loss": 0.1505165696144104,
+   "step": 70
+  },
+  {
+   "epoch": 2,
+   "loss": 0.21525566279888153,
+   "step": 71
+  },
+  {
+   "epoch": 2,
+   "loss": 0.3263513743877411,
+   "step": 72
+  },
+  {
+   "epoch": 2,
+   "loss": 0.7780541181564331,
+   "step": 73
+  },
+  {
+   "epoch": 2,
+   "loss": 0.24907638132572174,
+   "step": 74
+  },
+  {
+   "epoch": 2,
+   "loss": 0.15940289199352264,
+   "step": 75
+  },
+  {
+   "epoch": 2,
+   "loss": 0.3118225932121277,
+   "step": 76
+  },
+  {
+   "epoch": 3,
+   "loss": 0.25456005334854126,
+   "step": 77
+  },
+  {
+   "epoch": 3,
+   "loss": 0.20437896251678467,
+   "step": 78
+  },
+  {
+   "epoch": 3,
+   "loss": 0.3108738958835602,
+   "step": 79
+  },
+  {
+   "epoch": 3,
+   "loss": 0.5171270966529846,
+   "step": 80
+  },
+  {
+   "epoch": 3,
+   "loss": 0.09569726884365082,
+   "step": 81
+  },
+  {
+   "epoch": 3,
+   "loss": 0.20026588439941406,
+   "step": 82
+  },
+  {
+   "epoch": 3,
+   "loss": 0.21434961259365082,
+   "step": 83
+  },
+  {
+   "epoch": 3,
+   "loss": 0.09831522405147552,
+   "step": 84
+  },
+  {
+   "epoch": 3,
+   "loss": 0.0630238726735115,
+   "step": 85
+  },
+  {
+   "epoch": 3,
+   "loss": 0.3990609347820282,
+   "step": 86
+  },
+  {
+   "epoch": 3,
+   "loss": 0.05828635394573212,
+   "step": 87
+  },
+  {
+   "epoch": 3,
+   "loss": 0.035538479685783386,
+   "step": 88
+  },
+  {
+   "epoch": 3,
+   "loss": 0.15222464501857758,
+   "step": 89
+  },
+  {
+   "epoch": 3,
+   "loss": 0.20284581184387207,
+   "step": 90
+  },
+  {
+   "epoch": 3,
+   "loss": 0.09588072448968887,
+   "step": 91
+  },
+  {
+   "epoch": 3,
+   "loss": 0.10713686048984528,
+   "step": 92
+  },
+  {
+   "epoch": 3,
+   "loss": 0.5946635603904724,
+   "step": 93
+  },
+  {
+   "epoch": 3,
+   "loss": 0.07819663733243942,
+   "step": 94
+  },
+  {
+   "epoch": 3,
+   "loss": 0.025508860126137733,
+   "step": 95
+  },
+  {
+   "epoch": 3,
+   "loss": 0.04253245145082474,
+   "step": 96
+  },
+  {
+   "epoch": 3,
+   "loss": 0.04605772718787193,
+   "step": 97
+  },
+  {
+   "epoch": 3,
+   "loss": 0.46615132689476013,
+   "step": 98
+  },
+  {
+   "epoch": 3,
+   "loss": 0.138556569814682,
+   "step": 99
+  },
+  {
+   "epoch": 3,
+   "loss": 0.2455863207578659,
+   "step": 100
+  },
+  {
+   "epoch": 3,
+   "loss": 0.09387563169002533,
+   "step": 101
+  },
+  {
+   "epoch": 3,
+   "loss": 0.0319942943751812,
+   "step": 102
+  },
+  {
+   "epoch": 3,
+   "loss": 0.04757379740476608,
+   "step": 103
+  },
+  {
+   "epoch": 3,
+   "loss": 0.0531364344060421,
+   "step": 104
+  },
+  {
+   "epoch": 3,
+   "loss": 0.046540483832359314,
+   "step": 105
+  },
+  {
+   "epoch": 3,
+   "loss": 0.22917352616786957,
+   "step": 106
+  },
+  {
+   "epoch": 3,
+   "loss": 0.4963943660259247,
+   "step": 107
+  },
+  {
+   "epoch": 3,
+   "loss": 0.05729285627603531,
+   "step": 108
+  },
+  {
+   "epoch": 3,
+   "loss": 0.03373832628130913,
+   "step": 109
+  },
+  {
+   "epoch": 3,
+   "loss": 0.08295781165361404,
+   "step": 110
+  },
+  {
+   "epoch": 3,
+   "loss": 0.008029910735785961,
+   "step": 111
+  },
+  {
+   "epoch": 3,
+   "loss": 0.29816848039627075,
+   "step": 112
+  },
+  {
+   "epoch": 3,
+   "loss": 0.018745437264442444,
+   "step": 113
+  },
+  {
+   "epoch": 3,
+   "loss": 0.015512282028794289,
+   "step": 114
+  }
+ ],
+ "dev_curve": [
+  {
+   "dev_accuracy": 0.805,
+   "epoch": 1
+  },
+  {
+   "dev_accuracy": 0.92,
+   "epoch": 2
+  },
+  {
+   "dev_accuracy": 0.955,
+   "epoch": 3
+  }
+ ],
+ "frac": 1.0,
+ "kind": "train",
+ "n_train": 600,
+ "peak_rss_mb": 5171.560448,
+ "schema_version": "1",
+ "seed": 1337,
+ "split_hash": "6051975c7021a0e81f3d320e0b2f19018e0440db9b210f9a3858a252ce0d778c",
+ "steps": 114,
+ "train_ids": [
+  "train-97",
+  "test-9",
+  "test-18",
+  "train-149",
+  "train-115",
+  "train-63",
+  "train-84",
+  "train-20",
+  "train-47",
+  "train-105",
+  "train-53",
+  "train-1",
+  "train-12",
+  "train-27",
+  "train-98",
+  "train-45",
+  "train-58",
+  "test-14",
+  "train-49",
+  "train-96",
+  "train-22",
+  "test-15",
+  "train-112",
+  "train-101",
+  "train-51",
+  "test-29",
+  "test-24",
+  "test-37",
+  "test-10",
+  "train-65",
+  "train-142",
+  "train-119",
+  "train-64",
+  "test-23",
+  "train-74",
+  "train-151",
+  "train-31",
+  "train-4",
+  "train-28",
+  "train-3",
+  "test-6",
+  "train-15",
+  "train-87",
+  "train-150",
+  "train-32",
+  "train-2",
+  "test-25",
+  "test-30",
+  "test-39",
+  "train-46",
+  "train-54",
+  "test-2",
+  "train-73",
+  "train-124",
+  "train-125",
+  "train-120",
+  "train-94",
+  "train-37",
+  "train-107",
+  "train-146",
+  "train-2576",
+  "test-824",
+  "test-808",
+  "train-2516",
+  "train-2532",
+  "train-2568",
+  "train-2511",
+  "train-2517",
+  "train-2695",
+  "test-837",
+  "train-2684",
+  "train-2588",
+  "train-2647",
+  "train-2655",
+  "train-2612",
+  "train-2609",
+  "train-2549",
+  "train-2672",
+  "test-829",
+  "test-811",
+  "train-2550",
+  "train-2633",
+  "train-2649",
+  "train-2587",
+  "train-2530",
+  "test-831",
+  "train-2662",
+  "train-2596",
+  "train-2613",
+  "test-830",
+  "test-828",
+  "test-839",
+  "train-2566",
+  "train-2531",
+  "train-2537",
+  "train-2677",
+  "train-2546",
+  "test-801",
+  "train-2539",
+  "train-2637",
+  "train-2585",
+  "train-2692",
+  "train-2657",
+  "train-2688",
+  "train-2632",
+  "test-833",
+  "test-820",
+  "train-2581",
+  "train-2565",
+  "train-2650",
+  "train-2639",
+  "train-2652",
+  "train-2626",
+  "train-2646",
+  "test-832",
+  "train-2577",
+  "test-810",
+  "train-2676",
+  "train-2589",
+  "train-2631",
+  "train-9434",
+  "test-2892",
+  "train-9361",
+  "train-9452",
+  "train-9377",
+  "train-9422",
+  "test-2915",
+  "train-9413",
+  "train-9456",
+  "train-9412",
+  "test-2918",
+  "train-9479",
+  "train-9480",
+  "train-9425",
+  "train-9513",
+  "train-9441",
+  "train-9381",
+  "train-9343",
+  "test-2886",
+  "train-9373",
+  "train-9375",
+  "train-9397",
+  "test-2909",
+  "train-9353",
+  "train-9420",
+  "train-9488",
+  "train-9372",
+  "train-9463",
+  "train-9442",
+  "train-9429",
+  "train-9365",
+  "train-9380",
+  "train-9472",
+  "test-2883",
+  "train-9349",
+  "train-9414",
+  "train-9460",
+  "train-9358",
+  "train-9432",
+  "test-2890",
+  "test-2891",
+  "test-2908",
+  "train-9340",
+  "train-9487",
+  "train-9473",
+  "train-9393",
+  "train-9390",
+  "test-2917",
+  "train-9459",
+  "train-9430",
+  "train-9371",
+  "train-9428",
+  "train-9474",
+  "test-2897",
+  "test-2899",
+  "test-2910",
+  "train-9445",
+  "train-9507",
+  "train-9367",
+  "train-9394",
+  "train-5986",
+  "train-5862",
+  "train-5954",
+  "test-1815",
+  "train-5978",
+  "train-5971",
+  "train-5976",
+  "train-5844",
+  "train-5901",
+  "train-5846",
+  "train-5885",
+  "test-1834",
+  "train-5939",
+  "test-1839",
+  "train-5861",
+  "train-5882",
+  "train-5949",
+  "train-5947",
+  "train-5927",
+  "train-5922",
+  "train-5900",
+  "test-1819",
+  "train-5975",
+  "test-1833",
+  "train-5953",
+  "train-5941",
+  "train-5931",
+  "train-5856",
+  "test-1822",
+  "train-5937",
+  "train-5981",
+  "train-5847",
+  "train-5936",
+  "train-5858",
+  "train-5905",
+  "test-1813",
+  "train-5951",
+  "train-5903",
+  "test-1836",
+  "train-5887",
+  "train-5965",
+  "train-5972",
+  "train-5910",
+  "train-5869",
+  "train-5837",
+  "train-5855",
+  "train-5977",
+  "train-5968",
+  "train-5866",
+  "test-1812",
+  "train-5894",
+  "train-5857",
+  "test-1816",
+  "train-5980",
+  "train-5962",
+  "train-5850",
+  "train-5888",
+  "train-5849",
+  "train-5886",
+  "train-5917",
+  "train-339",
+  "test-118",
+  "train-341",
+  "test-83",
+  "test-119",
+  "train-364",
+  "train-359",
+  "train-322",
+  "test-99",
+  "train-311",
+  "train-396",
+  "train-381",
+  "train-304",
+  "train-354",
+  "test-108",
+  "train-342",
+  "test-87",
+  "train-351",
+  "train-403",
+  "test-111",
+  "train-360",
+  "train-376",
+  "train-361",
+  "train-294",
+  "train-373",
+  "train-391",
+  "train-314",
+  "test-101",
+  "train-388",
+  "test-88",
+  "train-399",
+  "test-93",
+  "train-392",
+  "train-297",
+  "train-340",
+  "train-358",
+  "train-324",
+  "train-394",
+  "train-320",
+  "train-323",
+  "test-112",
+  "train-401",
+  "train-353",
+  "train-387",
+  "train-313",
+  "test-103",
+  "train-329",
+  "train-332",
+  "train-299",
+  "test-110",
+  "train-389",
+  "train-293",
+  "test-100",
+  "test-80",
+  "train-325",
+  "test-86",
+  "train-357",
+  "test-115",
+  "train-308",
+  "train-356",
+  "train-7870",
+  "train-7896",
+  "test-2427",
+  "train-7817",
+  "train-7884",
+  "train-7814",
+  "train-7812",
+  "train-7869",
+  "train-7871",
+  "train-7914",
+  "train-7856",
+  "train-7843",
+  "train-7906",
+  "train-7908",
+  "train-7819",
+  "train-7811",
+  "train-7864",
+  "train-7853",
+  "train-7878",
+  "train-7894",
+  "train-7860",
+  "train-7849",
+  "train-7809",
+  "train-7930",
+  "test-2433",
+  "train-7836",
+  "train-7816",
+  "train-7834",
+  "train-7929",
+  "train-7876",
+  "train-7927",
+  "train-7903",
+  "train-7873",
+  "test-2434",
+  "test-2402",
+  "train-7921",
+  "train-7899",
+  "train-7872",
+  "test-2423",
+  "train-7874",
+  "test-2429",
+  "test-2431",
+  "test-2430",
+  "train-7845",
+  "test-2404",
+  "train-7881",
+  "train-7854",
+  "test-2416",
+  "test-2422",
+  "train-7867",
+  "test-2408",
+  "train-7815",
+  "train-7835",
+  "train-7920",
+  "train-7818",
+  "train-7925",
+  "train-7828",
+  "train-7883",
+  "train-7850",
+  "test-2407",
+  "train-1540",
+  "train-1532",
+  "test-459",
+  "train-1479",
+  "train-1499",
+  "train-1494",
+  "train-1504",
+  "train-1489",
+  "train-1511",
+  "train-1496",
+  "test-457",
+  "train-1550",
+  "train-1546",
+  "test-455",
+  "train-1534",
+  "train-1516",
+  "test-463",
+  "test-458",
+  "train-1490",
+  "train-1518",
+  "train-1488",
+  "test-450",
+  "train-1491",
+  "test-467",
+  "train-1506",
+  "train-1538",
+  "train-1554",
+  "train-1548",
+  "train-1505",
+  "train-1555",
+  "train-1483",
+  "train-1480",
+  "test-468",
+  "train-1553",
+  "train-1497",
+  "train-1531",
+  "train-1487",
+  "train-1498",
+  "train-1530",
+  "train-1525",
+  "test-446",
+  "test-466",
+  "train-1476",
+  "train-1503",
+  "test-445",
+  "test-477",
+  "train-1510",
+  "test-448",
+  "test-479",
+  "train-1517",
+  "test-461",
+  "train-1552",
+  "train-1537",
+  "train-1544",
+  "test-447",
+  "train-1547",
+  "train-1501",
+  "test-443",
+  "test-442",
+  "test-444",
+  "train-6025",
+  "train-6128",
+  "train-6091",
+  "train-6094",
+  "train-5992",
+  "test-1865",
+  "train-6045",
+  "train-5989",
+  "train-6066",
+  "train-6067",
+  "test-1842",
+  "train-6080",
+  "train-6136",
+  "train-6019",
+  "train-5996",
+  "train-6044",
+  "test-1871",
+  "train-6017",
+  "train-6126",
+  "train-6041",
+  "train-6020",
+  "train-6133",
+  "train-6009",
+  "train-6011",
+  "train-6021",
+  "test-1876",
+  "train-6049",
+  "train-6031",
+  "train-6039",
+  "train-6132",
+  "train-6112",
+  "test-1844",
+  "train-6059",
+  "train-6122",
+  "train-6056",
+  "train-6048",
+  "train-6018",
+  "train-6135",
+  "test-1873",
+  "train-6055",
+  "test-1877",
+  "train-6070",
+  "test-1866",
+  "train-6043",
+  "train-6089",
+  "train-6005",
+  "train-6090",
+  "test-1864",
+  "train-5990",
+  "train-6007",
+  "test-1853",
+  "train-6040",
+  "train-6103",
+  "train-6035",
+  "train-6033",
+  "test-1857",
+  "test-1862",
+  "test-1846",
+  "train-6119",
+  "test-1861",
+  "train-8606",
+  "train-8610",
+  "test-2658",
+  "test-2676",
+  "train-8599",
+  "test-2643",
+  "train-8534",
+  "test-2675",
+  "train-8560",
+  "train-8567",
+  "train-8485",
+  "train-8595",
+  "test-2655",
+  "train-8578",
+  "test-2644",
+  "test-2673",
+  "train-8522",
+  "train-8603",
+  "train-8577",
+  "train-8512",
+  "train-8611",
+  "train-8568",
+  "train-8481",
+  "train-8504",
+  "train-8563",
+  "train-8479",
+  "train-8593",
+  "test-2664",
+  "test-2641",
+  "train-8490",
+  "train-8573",
+  "train-8468",
+  "train-8596",
+  "train-8590",
+  "train-8559",
+  "train-8496",
+  "test-2653",
+  "train-8570",
+  "train-8503",
+  "train-8574",
+  "test-2648",
+  "train-8541",
+  "test-2659",
+  "train-8528",
+  "train-8545",
+  "test-2649",
+  "train-8547",
+  "train-8471",
+  "test-2671",
+  "train-8487",
+  "test-2656",
+  "train-8515",
+  "train-8543",
+  "train-8517",
+  "train-8475",
+  "train-8554",
+  "train-8544",
+  "train-8581",
+  "train-8608",
+  "train-8473",
+  "train-9811",
+  "train-9853",
+  "train-9857",
+  "test-3020",
+  "test-3038",
+  "train-9802",
+  "test-3025",
+  "train-9838",
+  "train-9770",
+  "test-3003",
+  "test-3023",
+  "train-9835",
+  "train-9847",
+  "train-9845",
+  "test-3011",
+  "train-9774",
+  "test-3021",
+  "test-3035",
+  "train-9861",
+  "train-9798",
+  "train-9854",
+  "train-9782",
+  "train-9859",
+  "train-9839",
+  "test-3018",
+  "train-9788",
+  "train-9858",
+  "train-9820",
+  "test-3006",
+  "train-9868",
+  "test-3036",
+  "test-3012",
+  "test-3004",
+  "train-9873",
+  "train-9793",
+  "train-9863",
+  "test-3002",
+  "train-9785",
+  "test-3030",
+  "train-9830",
+  "train-9867",
+  "test-3039",
+  "train-9807",
+  "train-9843",
+  "train-9784",
+  "train-9837",
+  "train-9869",
+  "train-9855",
+  "train-9803",
+  "test-3032",
+  "train-9794",
+  "train-9773",
+  "test-3037",
+  "train-9783",
+  "train-9856",
+  "train-9809",
+  "train-9805",
+  "train-9792",
+  "train-9806",
+  "test-3000"
+ ],
+ "train_seconds": 134.12259799730964
+}

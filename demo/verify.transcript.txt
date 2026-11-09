@@ -1,0 +1,16 @@
+ok   lockfile in sync
+ok   ruff
+ok   mypy strict
+ok   pytest
+ok   selftest planted defects
+ok   receipts schema
+ok   audit real receipts
+ok   README matches receipts
+ok   PUBLISH.tsv replays
+ok   README honesty+mermaid
+ok   DESIGN ADRs+extension+steelman
+ok   EXTENDING doc
+ok   premortem has 5 rows
+ok   CI yaml present
+ok   dewatermark
+GREEN 15/15 checks

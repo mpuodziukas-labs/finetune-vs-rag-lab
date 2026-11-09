@@ -1,0 +1,13 @@
+id	literal	command	expected_output	label
+acc_lora	0.960	ftlab show acc.A	0.960	measured
+acc_retrieval	0.853	ftlab show acc.B	0.853	measured
+acc_zeroshot	0.102	ftlab show acc.C	0.102	measured
+mcnemar_ab	p<0.0001	ftlab show p.AB	p<0.0001	measured
+p50_lora_ms	40.1	ftlab show p50.A	40.1	measured
+p50_retrieval_ms	106.0	ftlab show p50.B	106.0	measured
+p95_retrieval_ms	164.5	ftlab show p95.B	164.5	measured
+train_seconds	134.1	ftlab show train_seconds	134.1	measured
+peak_rss_mb	5172	ftlab show peak_rss_mb	5172	measured
+ppl_ratio	1.090	ftlab show ppl_ratio	1.090	measured
+n_test	400	ftlab show n_test	400	measured
+lora_params	2,442,240	ftlab show lora_params	2,442,240	measured

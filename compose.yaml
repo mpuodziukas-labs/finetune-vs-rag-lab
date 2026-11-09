@@ -1,0 +1,10 @@
+# One-shot audit of the committed receipts. No network, read-only root, no capabilities. Not run by verify.sh.
+services:
+  audit:
+    build: .
+    command: ["audit"]
+    read_only: true
+    network_mode: none
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    tmpfs: ["/tmp"]

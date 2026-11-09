@@ -1,0 +1,5 @@
+claim	command	expected
+Verify script is GREEN	bash scripts/verify.sh	GREEN 15/15 checks
+Local CI parity	bash scripts/ci-local.sh	ci-local: GREEN
+Selftest has teeth	bash scripts/selftest.sh	selftest
+Example script reproduces a README number	bash examples/01_lora_accuracy.sh	0.960

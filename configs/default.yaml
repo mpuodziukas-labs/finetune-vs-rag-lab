@@ -1,0 +1,60 @@
+schema_version: "1"
+seed: 1337
+plugins: []            # extra modules to import (they register datasets/models/adapters)
+
+dataset:
+  name: banking77_subset
+  repo: PolyAI/banking77
+  revision: 1846984189f2bc0ac51c6fc3a600fa9e1714e0c6   # CC-BY-4.0
+  files:
+    README.md: f3786a5327fd6533c7c0ff3ff654e20ee3d1261d2fa41667381f59a2e42364e1
+    data/train-00000-of-00001.parquet: 8dc89b87a188509c42cce5a086e8f7c1ff4a225bdd9ae3f23e6cdfa5806e363a
+    data/test-00000-of-00001.parquet: 1f40f777c33f0edfa6c530ff84fe2878db6490838c12d22d036f626948905341
+  # class -> single verbalizer word; first tokens must be distinct (checked at load)
+  classes:
+    card_arrival: arrival
+    lost_or_stolen_card: stolen
+    exchange_rate: exchange
+    top_up_failed: failed
+    cash_withdrawal_charge: withdrawal
+    pending_transfer: pending
+    declined_card_payment: declined
+    verify_my_identity: identity
+    card_payment_fee_charged: fee
+    getting_spare_card: spare
+  split: { train_per_class: 60, dev_per_class: 20, test_per_class: 40 }
+
+model:
+  name: causal_lm
+  id: HuggingFaceTB/SmolLM2-135M            # Apache-2.0
+  revision: 93efa2f097d58c2a74874c7e644dbc9b0cee75a2
+
+adapter:
+  name: lora
+  rank: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+  lr: 0.0002
+  epochs: 3
+  batch_size: 16
+
+retriever:
+  name: bm25
+  ks: [2, 4, 8]          # chosen on DEV only
+
+fractions: [0.25, 0.5, 1.0]
+
+forgetting:            # general-text perplexity probe, adapter off vs on
+  repo: Salesforce/wikitext                  # CC-BY-SA-3.0
+  revision: b08601e04326c79dfdd32d625aee71d232d685c3
+  file: wikitext-2-raw-v1/test-00000-of-00001.parquet
+  sha256: 5f1bea067869d04849c0f975a2b29c4ff47d867f484f5010ea5e861eab246d91
+  n_chunks: 40
+  chunk_tokens: 256
+
+cost:
+  # ASSUMPTION, not a quote: hourly price of a small CPU instance. Change to your own rate.
+  assumed_usd_per_hour: 0.40
+
+bootstrap_n: 10000

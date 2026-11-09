@@ -1,0 +1,5 @@
+id	metric	value	command
+B1	pytest wall seconds, 83 tests	8.9	python3 -m pytest -q (single run, one laptop)
+B2	verify.sh wall seconds, HEAVY=0, 14 checks	27.9	HEAVY=0 bash scripts/verify.sh
+B3	mutants.py wall seconds, 5 mutants	2.5	python3 -P scripts/mutants.py
+B4	spec-trace wall seconds, 26 requirements	0.3	python3 -P tests/test_spec_trace.py

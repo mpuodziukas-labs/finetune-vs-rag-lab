@@ -1,0 +1,23 @@
+step 1 RED: SPEC.md and the trace test written, the collector read the wrong output
+$ python3 -P tests/test_spec_trace.py
+spec-trace: 1/25   # the collector saw per-file counts instead of test ids
+
+step 2 GREEN: collector asks pytest for ids with the project options cleared
+$ python3 -P tests/test_spec_trace.py
+spec-trace: 25/25
+
+step 3 RED: receipt pin test written before the pins were resealed
+$ pytest tests/test_senior_files.py
+FAILED tests/test_senior_files.py::test_receipt_pins_verify   # README.md differed from receipts/SHA256SUMS
+
+step 4 RED: planted defects, one survived
+$ python3 -P scripts/mutants.py
+M2 bootstrap ignores the seed: SURVIVED   # one unseeded repeat can tie by chance
+mutants: 4/5 RED
+
+step 5 GREEN: pins resealed, determinism test repeats the seeded call eight times
+$ pytest
+$ bash scripts/verify.sh
+verify-light: GREEN 14/14 (HEAVY=0; omits: mypy)
+$ python3 -P scripts/mutants.py
+mutants: 5/5 RED, original restored (never written)

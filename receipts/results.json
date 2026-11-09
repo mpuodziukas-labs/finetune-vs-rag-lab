@@ -1,0 +1,283 @@
+{
+ "chosen_k": 4,
+ "cost": {
+  "breakeven_queries": 1903.9053925634573,
+  "per_1k_queries_usd": {
+   "A": 0.004692439097949926,
+   "B": 0.012519777024927964,
+   "C": 0.0056393075664527715
+  },
+  "train_usd": 0.01490251088858996,
+  "usd_per_hour_assumed": 0.4
+ },
+ "decision": [
+  {
+   "criterion": "Accuracy, 100% of train",
+   "evidence": "McNemar exact p<0.0001 (tie unless p<0.05)",
+   "fine_tune": "0.960",
+   "retrieve": "0.853",
+   "winner": "fine-tune"
+  },
+  {
+   "criterion": "Accuracy, 25% of train",
+   "evidence": "McNemar exact p=0.0696 (tie unless p<0.05)",
+   "fine_tune": "0.682",
+   "retrieve": "0.733",
+   "winner": "tie"
+  },
+  {
+   "criterion": "Gain from 25% to 100% of train (pp)",
+   "evidence": "larger gain wins; tie if within 2 pp",
+   "fine_tune": "+27.7",
+   "retrieve": "+12.0",
+   "winner": "fine-tune"
+  },
+  {
+   "criterion": "Latency p50 (ms, batch 1)",
+   "evidence": "ratio retrieve/fine-tune = 2.64x; tie if within 10%",
+   "fine_tune": "40.1",
+   "retrieve": "106.0",
+   "winner": "fine-tune"
+  },
+  {
+   "criterion": "Prompt tokens per query",
+   "evidence": "ratio retrieve/fine-tune = 7.22x",
+   "fine_tune": "19",
+   "retrieve": "137",
+   "winner": "fine-tune"
+  },
+  {
+   "criterion": "Marginal $ per 1k queries (estimate)",
+   "evidence": "train cost $0.0149 recovered after ~1,904 queries",
+   "fine_tune": "0.00469",
+   "retrieve": "0.01252",
+   "winner": "fine-tune"
+  },
+  {
+   "criterion": "Cost to absorb new labeled data",
+   "evidence": "structural; fine-tune figure is the measured 100% training time",
+   "fine_tune": "retrain, 134 s measured",
+   "retrieve": "append to index, no gradient step",
+   "winner": "retrieve"
+  },
+  {
+   "criterion": "General-text perplexity vs base (lower ratio is better)",
+   "evidence": "retrieve wins only if fine-tune degrades general text by more than 2%",
+   "fine_tune": "1.090x",
+   "retrieve": "1.000x (weights untouched)",
+   "winner": "retrieve"
+  }
+ ],
+ "display": {
+  "acc.A": "0.960",
+  "acc.B": "0.853",
+  "acc.C": "0.102",
+  "breakeven": "1,904",
+  "chosen_k": "4",
+  "ci.A": "[0.940, 0.978]",
+  "ci.B": "[0.818, 0.887]",
+  "ci.C": "[0.075, 0.133]",
+  "disc.AB": "9/52",
+  "disc.AC": "3/346",
+  "disc.BC": "14/314",
+  "eff.A.100": "0.960",
+  "eff.A.25": "0.682",
+  "eff.A.50": "0.882",
+  "eff.B.100": "0.853",
+  "eff.B.25": "0.733",
+  "eff.B.50": "0.812",
+  "lora_params": "2,442,240",
+  "loss_first": "9.604",
+  "loss_last": "0.122",
+  "n_test": "400",
+  "p.AB": "p<0.0001",
+  "p.AC": "p<0.0001",
+  "p.BC": "p<0.0001",
+  "p50.A": "40.1",
+  "p50.B": "106.0",
+  "p50.C": "47.1",
+  "p95.A": "51.3",
+  "p95.B": "164.5",
+  "p95.C": "73.3",
+  "peak_rss_mb": "5172",
+  "ppl_base": "29.02",
+  "ppl_lora": "31.63",
+  "ppl_ratio": "1.090",
+  "tok.A": "19",
+  "tok.B": "137",
+  "tok.C": "50",
+  "train_seconds": "134.1",
+  "train_usd": "0.0149"
+ },
+ "efficiency": {
+  "100": {
+   "A": {
+    "acc": 0.96,
+    "hi": 0.9775,
+    "lat_mean": 42.23195188154932,
+    "lo": 0.94,
+    "n": 400,
+    "p50": 40.096770506352186,
+    "p95": 51.266566803678835,
+    "tok_mean": 19.0275,
+    "tok_total": 7611
+   },
+   "B": {
+    "acc": 0.8525,
+    "hi": 0.8875,
+    "lat_mean": 112.67799322435167,
+    "lo": 0.8175,
+    "n": 400,
+    "p50": 106.00318701472133,
+    "p95": 164.48258992750192,
+    "tok_mean": 137.3325,
+    "tok_total": 54933
+   },
+   "n_train": 600,
+   "p_AB": 1.802802378388091e-08
+  },
+  "25": {
+   "A": {
+    "acc": 0.6825,
+    "hi": 0.7275,
+    "lat_mean": 53.416354604414664,
+    "lo": 0.635,
+    "n": 400,
+    "p50": 47.54524945747107,
+    "p95": 89.8632168653421,
+    "tok_mean": 19.0275,
+    "tok_total": 7611
+   },
+   "B": {
+    "acc": 0.7325,
+    "hi": 0.775,
+    "lat_mean": 89.29530799563508,
+    "lo": 0.6899375000000005,
+    "n": 400,
+    "p50": 87.68479200080037,
+    "p95": 113.01159197464585,
+    "tok_mean": 140.455,
+    "tok_total": 56182
+   },
+   "n_train": 150,
+   "p_AB": 0.06956519633623019
+  },
+  "50": {
+   "A": {
+    "acc": 0.8825,
+    "hi": 0.9125,
+    "lat_mean": 41.116228434839286,
+    "lo": 0.85,
+    "n": 400,
+    "p50": 39.646958583034575,
+    "p95": 49.721212184522294,
+    "tok_mean": 19.0275,
+    "tok_total": 7611
+   },
+   "B": {
+    "acc": 0.8125,
+    "hi": 0.85,
+    "lat_mean": 95.7345407345565,
+    "lo": 0.775,
+    "n": 400,
+    "p50": 92.58183313068002,
+    "p95": 124.17092045070602,
+    "tok_mean": 137.86,
+    "tok_total": 55144
+   },
+   "n_train": 300,
+   "p_AB": 0.0026424928957725436
+  }
+ },
+ "forget": {
+  "chunk_tokens": 256,
+  "kind": "forget",
+  "n_chunks": 40,
+  "ppl_adapter_off": 29.022641791195735,
+  "ppl_base": 29.022641791195735,
+  "ppl_lora": 31.629376397758485,
+  "ppl_ratio": 1.0898172752610524,
+  "probe": "wikitext-2-raw test perplexity",
+  "schema_version": "1"
+ },
+ "kind": "results",
+ "mcnemar": {
+  "AB": {
+   "n01": 9,
+   "n10": 52,
+   "p": 1.802802378388091e-08
+  },
+  "AC": {
+   "n01": 3,
+   "n10": 346,
+   "p": 1.2356754786078617e-98
+  },
+  "BC": {
+   "n01": 14,
+   "n10": 314,
+   "p": 5.527305289695543e-75
+  }
+ },
+ "methods": {
+  "A": {
+   "acc": 0.96,
+   "hi": 0.9775,
+   "lat_mean": 42.23195188154932,
+   "lo": 0.94,
+   "n": 400,
+   "p50": 40.096770506352186,
+   "p95": 51.266566803678835,
+   "tok_mean": 19.0275,
+   "tok_total": 7611
+  },
+  "B": {
+   "acc": 0.8525,
+   "hi": 0.8875,
+   "lat_mean": 112.67799322435167,
+   "lo": 0.8175,
+   "n": 400,
+   "p50": 106.00318701472133,
+   "p95": 164.48258992750192,
+   "tok_mean": 137.3325,
+   "tok_total": 54933
+  },
+  "C": {
+   "acc": 0.1025,
+   "hi": 0.1325,
+   "lat_mean": 50.75376809807494,
+   "lo": 0.075,
+   "n": 400,
+   "p50": 47.09937493316829,
+   "p95": 73.33766691153868,
+   "tok_mean": 50.0275,
+   "tok_total": 20011
+  }
+ },
+ "n_test": 400,
+ "schema_version": "1",
+ "seed": 1337,
+ "train": {
+  "dev_curve": [
+   {
+    "dev_accuracy": 0.805,
+    "epoch": 1
+   },
+   {
+    "dev_accuracy": 0.92,
+    "epoch": 2
+   },
+   {
+    "dev_accuracy": 0.955,
+    "epoch": 3
+   }
+  ],
+  "lora_params": 2442240,
+  "loss_first": 9.603674975308506,
+  "loss_last": 0.12178999227894978,
+  "n_train": 600,
+  "peak_rss_mb": 5171.560448,
+  "rank": 8,
+  "seconds": 134.12259799730964,
+  "steps": 114
+ }
+}

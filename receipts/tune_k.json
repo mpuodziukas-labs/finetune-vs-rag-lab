@@ -1,0 +1,11 @@
+{
+ "chosen_k": 4,
+ "dev_accuracy": {
+  "2": 0.835,
+  "4": 0.87,
+  "8": 0.845
+ },
+ "kind": "tune_k",
+ "schema_version": "1",
+ "split": "dev"
+}

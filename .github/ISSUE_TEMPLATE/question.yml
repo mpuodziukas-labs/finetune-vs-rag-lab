@@ -1,0 +1,11 @@
+name: Question
+description: Ask how a method, a number or a limit in this lab works.
+labels: [question]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you want to know
+      description: Name the README section or file. Security problems go through the private report button, not here.
+    validations:
+      required: true

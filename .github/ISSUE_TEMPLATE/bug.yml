@@ -1,0 +1,30 @@
+name: Bug report
+description: A command fails, or a published number does not reproduce.
+labels: [bug]
+body:
+  - type: input
+    id: command
+    attributes:
+      label: Command you ran
+      description: The exact command, copied from README or EVIDENCE.md.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected last line
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual output
+      description: The last 20 lines. Do not paste keys or tokens.
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Python version and operating system
+    validations:
+      required: true

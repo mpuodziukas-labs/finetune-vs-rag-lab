@@ -1,0 +1,11 @@
+{
+ "chunk_tokens": 256,
+ "kind": "forget",
+ "n_chunks": 40,
+ "ppl_adapter_off": 29.022641791195735,
+ "ppl_base": 29.022641791195735,
+ "ppl_lora": 31.629376397758485,
+ "ppl_ratio": 1.0898172752610524,
+ "probe": "wikitext-2-raw test perplexity",
+ "schema_version": "1"
+}

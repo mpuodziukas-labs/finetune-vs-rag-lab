@@ -1,0 +1,9 @@
+term	file	test	doc	stand-in
+LoRA fine-tuning	configs	tests/test_splits.py	DESIGN.md	none: measured here by tests/test_splits.py
+Retrieval-augmented generation	src	tests/test_retrieve.py	DESIGN.md	none: measured here by tests/test_retrieve.py
+Bootstrap confidence intervals	src	tests/test_stats.py	DESIGN.md	none: measured here by tests/test_stats.py
+Receipts with sha256	receipts/SHA256SUMS	tests/test_audit.py	DESIGN.md	none: measured here by tests/test_audit.py
+Threat model	THREAT-MODEL.md	tests/test_review.py	THREAT-MODEL.md	none: measured here by tests/test_review.py
+Tiny random model	src/ftlab/selftest.py	tests/test_qa_pins.py	DESIGN.md	model-a: the stand-in label for the tiny random model the selftest builds, real id never tracked, see docs/ADR/0004-borrowed-terms-behind-stand-ins.md
+Base model	src/ftlab/modeling.py	tests/test_qa2_pins.py	README.md	model-b: the stand-in label for the pinned 135M base model, real id only in the untracked local config, see docs/ADR/0004-borrowed-terms-behind-stand-ins.md
+Model host	src/ftlab/data.py	tests/test_qa2_pins.py	README.md	provider-a: the stand-in label for the model host that serves the pinned dataset and tokenizer, real name only in the untracked local config, see docs/ADR/0004-borrowed-terms-behind-stand-ins.md

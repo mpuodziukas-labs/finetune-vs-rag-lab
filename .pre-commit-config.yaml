@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: ci-local
+        name: ci-local (same steps as CI)
+        entry: bash scripts/ci-local.sh
+        language: system
+        pass_filenames: false
+        always_run: true
