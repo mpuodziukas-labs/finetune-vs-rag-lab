@@ -67,7 +67,7 @@ mdurl==0.1.2
 mpmath==1.3.0
     # via sympy
 mypy==2.4.1
-mypy-extensions==1.1.0
+mypy-extensions==1.2.0
     # via mypy
 networkx==3.6.1
     # via torch
