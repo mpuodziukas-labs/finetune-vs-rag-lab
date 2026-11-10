@@ -183,7 +183,7 @@ transformers==5.22.1
     #   peft
 triton==3.9.0 ; sys_platform == 'linux'
     # via torch
-typer==0.27.3
+typer==0.28.0
     # via transformers
 types-pyyaml==6.0.12.20261030
 typing-extensions==4.16.0
